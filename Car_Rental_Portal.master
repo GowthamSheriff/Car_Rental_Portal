@@ -1,0 +1,65 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Car_Rental_Portal, App_Web_xnktleuh" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            width: 100%;
+        }
+        .auto-style4 {
+            width: 524px;
+            height: 92px;
+            margin-left: 120px;
+        }
+        .auto-style5 {
+            position: absolute;
+            left: 202px;
+            top: 19px;
+        }
+        .auto-style10 {
+            width: 155px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div id="Header" style="background-color:cornflowerblue">
+            
+            <table class="auto-style3">
+                <tr><center>
+                    <td class="auto-style4">
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="88px" ImageUrl="~/Img/touch-icon-windowsphone.png" Width="121px" CssClass="auto-style5" />           
+                    </td>
+                    <td style="color:white; font-family:'Times New Roman'"><h1><b>Car Rental Portal </b></h1></td>
+                </tr></center> 
+            </table>          
+            </div>
+        <center>
+        <table>
+            <tr>
+                <td class="auto-style10">
+                    <asp:ImageButton ID="HomeImageButton" runat="server" ImageUrl="~/Img/HomeBtn.png" Height="45px" Width="115px" PostBackUrl="~/Home.aspx" />
+                </td>
+                <td class="auto-style10">
+                    <asp:ImageButton ID="DealersImageButton" runat="server" ImageUrl="~/Img/Dealersbtn.png" Height="45px" Width="115px" PostBackUrl="~/Dealer_Home.aspx" />
+                </td>
+                <td class="auto-style10">
+                    <asp:ImageButton ID="AboutUsImageButton" runat="server" ImageUrl="~/Img/Aboususbtn.png" Height="45px" Width="115px" PostBackUrl="~/AboutUs.aspx" />
+                </td>
+                <td class="auto-style10">
+                    <asp:ImageButton ID="ContactUsImageButton" runat="server" ImageUrl="~/Img/CONTACTUSBTN.png" Height="45px" Width="115px" PostBackUrl="~/ContactUs.aspx" />
+                </td>
+              
+            </tr>
+        </table></center>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
